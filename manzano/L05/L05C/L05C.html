@@ -8,29 +8,35 @@
 </head>
 <style>
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: Arial, sans-serif;
         margin: 20px;
-        line-height: 1.6;
         background-color: #f9f9f9;
         color: #333;
     }
 
     h1 {
-        text-align: center;
         color: #4CAF50;
+        text-align: center;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        margin: 10px 0;
+        padding: 5px;
+        font-size: 16px;
     }
 
     button {
-        display: block;
-        margin: 20px auto;
-        padding: 10px 20px;
-        font-size: 16px;
-        color: #fff;
         background-color: #4CAF50;
+        color: white;
         border: none;
-        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 16px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        border-radius: 5px;
     }
 
     button:hover {
@@ -38,17 +44,22 @@
     }
 
     #display {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
         margin-top: 20px;
-        justify-content: center;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    #display p {
+        text-align: center;
+        margin: 5px 0;
     }
 </style>
 
 <body>
-    <h1>Exibir os cem primeiros números inteiros</h1>
-    <button type="button" onclick="exibirNumeros()">Exibir Números</button>
+    <h1>Exibir a soma dos cem primeiros números inteiros</h1>
+    <button type="button" onclick="exibirResultado()">Exibir Resultado</button>
     <div id="display"></div>
 
     <script src="L05C.js"></script>

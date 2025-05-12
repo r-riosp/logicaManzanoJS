@@ -1,10 +1,8 @@
-function exibirNumeros() {
-    const display = document.getElementById('display');
-    display.innerHTML = "";
-
-    for (let contadora = 0; contadora < 101; contadora++) {
-        const linha = document.createElement("p");
-        linha.innerHTML = `Valor: ${contadora}`;
-        display.appendChild(linha);
+function exibirResultado() {
+    const display = document.getElementById("display");
+    let somatorio = 0;
+    for (let contadora = 1; contadora < 101; contadora++) {
+        somatorio += contadora;
     }
+    display.innerHTML = `<p>O valor total da soma dos valores foi: <b>${somatorio}</b></p>`;
 }
